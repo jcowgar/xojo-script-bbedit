@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	
+<!--
+	XojoScript Language Module for BBEdit
+	
+	Jeremy Cowgar
+	
+	INSTALLATION:
+		Copy this file into either
+		~/Library/Application Support/TextWrangler/Language Modules/     for TextWrangler, or
+		~/Library/Application Support/BBEdit/Language Modules/           for BBEdit
+-->
+
+<dict>
+	<key>BBEditDocumentType</key>
+	<string>CodelessLanguageModule</string>
+
+	<key>BBLMColorsSyntax</key>
+	<true/>
+
+	<key>BBLMIsCaseSensitive</key>
+	<false/>
+
+	<key>BBLMKeywordList</key>
+	<array>
+		<string>AddHandler</string>
+		<string>AddressOf</string>
+		<string>Array</string>
+		<string>As</string>
+		<string>Assigns</string>
+		<string>Break</string>
+		<string>ByRef</string>
+		<string>ByVal</string>
+		<string>Call</string>
+		<string>Case</string>
+		<string>Catch</string>
+		<string>Class</string>
+		<string>Const</string>
+		<string>Continue</string>
+		<string>CType</string>
+		<string>Declare</string>
+		<string>Dim</string>
+		<string>Do</string>
+		<string>Do...Loop</string>
+		<string>DownTo</string>
+		<string>Each</string>
+		<string>Else</string>
+		<string>End</string>
+		<string>Enum</string>
+		<string>Exception</string>
+		<string>Exit</string>
+		<string>Extends</string>
+		<string>False</string>
+		<string>Finally</string>
+		<string>For</string>
+		<string>Function</string>
+		<string>GetTypeInfo</string>
+		<string>GOTO</string>
+		<string>Handles</string>
+		<string>If</string>
+		<string>Implements</string>
+		<string>Interface</string>
+		<string>Else</string>
+		<string>ElseIf</string>
+		<string>Event</string>
+		<string>In</string>
+		<string>Inherits</string>
+		<string>Lib</string>
+		<string>Loop</string>
+		<string>Module</string>
+		<string>Next</string>
+		<string>Nil</string>
+		<string>Optional</string>
+		<string>ParamArray</string>
+		<string>Private</string>
+		<string>Protected</string>
+		<string>Raise</string>
+		<string>RaiseEvent</string>
+		<string>Redim</string>
+		<string>RemoveHandler</string>
+		<string>Return</string>
+		<string>Select</string>
+		<string>Select Case</string>
+		<string>Soft</string>
+		<string>Static</string>
+		<string>Step</string>
+		<string>Structure</string>
+		<string>Sub</string>
+		<string>Super</string>
+		<string>Then</string>
+		<string>To</string>
+		<string>True</string>
+		<string>Try</string>
+		<string>Until</string>
+		<string>Wend</string>
+		<string>While</string>
+	</array>
+
+	<key>BBLMLanguageCode</key>
+	<string>XJSC</string>
+
+	<key>BBLMLanguageDisplayName</key>
+	<string>XojoScript</string>
+	
+	<key>BBLMScansFunctions</key>
+	<true/>
+	
+	<key>BBLMSuffixMap</key>
+	<array>
+		<dict>
+			<key>BBLMLanguageSuffix</key>
+			<string>.xojo_script</string>
+		</dict>
+		<dict>
+			<key>BBLMLanguageSuffix</key>
+			<string>.xs</string>
+		</dict>
+	</array>
+	
+	<key>BBLMPreferredFilenameExtension</key>
+	<string>.xojo_script</string>
+	
+	<key>Language Features</key>
+	<dict>
+		<key>Function Pattern</key>
+		<string><![CDATA[(?x)
+			(?i)
+			(?P<leadspace>^[\t\x20]*)
+			(?P<function>
+				(?:(?P<scope>global|public|protected|private)\x20+)?
+				(?P<type>sub|function|class|module|interface)\s+
+				(?P<function_name>[a-z][a-z0-9_\x80-\x{FFFF}]*)
+			)
+			(?:\x20|\(|$)
+		]]></string>
+		
+		<key>Open Strings 1</key>
+		<string>"</string>
+		
+		<key>Close Strings 1</key>
+		<string>"</string>
+		
+		<key>Comment Pattern</key>
+		<string><![CDATA[('|//|\bREM\b).*$]]></string>
+		
+		<key>String Pattern</key>
+		<string><![CDATA["[^"\r]*"]]></string>
+
+		<key>Identifier and Keyword Character Class</key>
+		<string><![CDATA[a-zA-Z0-9_]]></string>
+
+		<key>Open Parameter Lists</key> 
+		<string>(</string> 
+
+		<key>Close Parameter Lists</key> 
+		<string>)</string> 
+	</dict>
+</dict>
+</plist>
