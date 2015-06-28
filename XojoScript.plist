@@ -32,6 +32,7 @@
 		<string>Assigns</string>
 		<string>Break</string>
 		<string>ByRef</string>
+		<string>Byte</string>
 		<string>ByVal</string>
 		<string>Call</string>
 		<string>Case</string>
@@ -43,6 +44,7 @@
 		<string>Declare</string>
 		<string>Dim</string>
 		<string>Do</string>
+		<string>Double</string>
 		<string>DownTo</string>
 		<string>Each</string>
 		<string>Else</string>
@@ -66,6 +68,11 @@
 		<string>Event</string>
 		<string>In</string>
 		<string>Inherits</string>
+		<string>Int8</string>
+		<string>Int16</string>
+		<string>Int32</string>
+		<string>Int64</string>
+		<string>Integer</string>
 		<string>Lib</string>
 		<string>Loop</string>
 		<string>Module</string>
@@ -84,6 +91,7 @@
 		<string>Soft</string>
 		<string>Static</string>
 		<string>Step</string>
+		<string>String</string>
 		<string>Structure</string>
 		<string>Sub</string>
 		<string>Super</string>
@@ -91,6 +99,11 @@
 		<string>To</string>
 		<string>True</string>
 		<string>Try</string>
+		<string>UInt8</string>
+		<string>UInt16</string>
+		<string>UInt32</string>
+		<string>UInt64</string>
+		<string>UInteger</string>
 		<string>Using</string>
 		<string>Until</string>
 		<string>Wend</string>
