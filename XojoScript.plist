@@ -81,7 +81,6 @@
 		<string>RemoveHandler</string>
 		<string>Return</string>
 		<string>Select</string>
-		<string>Select Case</string>
 		<string>Soft</string>
 		<string>Static</string>
 		<string>Step</string>
@@ -92,6 +91,7 @@
 		<string>To</string>
 		<string>True</string>
 		<string>Try</string>
+		<string>Using</string>
 		<string>Until</string>
 		<string>Wend</string>
 		<string>While</string>
